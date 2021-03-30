@@ -234,46 +234,38 @@ body {
         .content {
             padding: 20px 30px;
 
+            h4 {
+                color: white;
+                font-weight: 200;
+            }
             h3 {
                 color: var(--pink-color);
             }
             h2 {
                 color: white;
-                font-weight: 400;
+                font-weight: 300;
             }
             p {
                 font-style: italic;
                 color: var(--gray-color);
-            }
-            .more {
-                h3 {
-                    font-weight: 300;
-                }
-                h3:hover {
-                    cursor: pointer;
-                    font-weight: 400;
-                }
-                h3:visited {
-                    color: green;
-                }
             }
         }
     }
 }
 .container6 {
     display: flex;
-    flex-wrap: wrap;
     padding: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
     .left-content {
         flex: 1;
     }
     .right-photo {
         flex: 1;
-        padding-top: 50px;
-        img {
-            width: 400px;
-            height: auto;
-        }
+        background-image: url('./portfolio/new-product.png');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 50%;
     }
 }
 .container7 {
@@ -312,6 +304,9 @@ body {
                     height: 40px;
                 }
 
+                .content {
+                    padding-right: 10px;
+                }
                 .content p {
                     font-style: italic;
                     color: var(--gray-color);
@@ -413,11 +408,7 @@ body {
             flex: 1 100%;
         }
         .right-photo {
-            flex: 1 100%;
-
-            img {
-                width: 300px;
-            }
+            display: none;
         }
     }
     .container7 {
