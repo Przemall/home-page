@@ -348,13 +348,18 @@ body {
   padding: 20px 30px;
 }
 
+.container5 .box .content h4 {
+  color: white;
+  font-weight: 200;
+}
+
 .container5 .box .content h3 {
   color: var(--pink-color);
 }
 
 .container5 .box .content h2 {
   color: white;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .container5 .box .content p {
@@ -362,26 +367,17 @@ body {
   color: var(--gray-color);
 }
 
-.container5 .box .content .more h3 {
-  font-weight: 300;
-}
-
-.container5 .box .content .more h3:hover {
-  cursor: pointer;
-  font-weight: 400;
-}
-
-.container5 .box .content .more h3:visited {
-  color: green;
-}
-
 .container6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .container6 .left-content {
@@ -394,12 +390,10 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-top: 50px;
-}
-
-.container6 .right-photo img {
-  width: 400px;
-  height: auto;
+  background-image: url("./portfolio/new-product.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
 
 .container7 {
@@ -467,6 +461,10 @@ body {
 .container7 .left-content .bot-content .box .icon img {
   width: 40px;
   height: 40px;
+}
+
+.container7 .left-content .bot-content .box .content {
+  padding-right: 10px;
 }
 
 .container7 .left-content .bot-content .box .content p {
@@ -573,12 +571,7 @@ body {
             flex: 1 100%;
   }
   .container6 .right-photo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 100%;
-            flex: 1 100%;
-  }
-  .container6 .right-photo img {
-    width: 300px;
+    display: none;
   }
   .container7 .right-photo {
     display: none;
